@@ -3,6 +3,7 @@ import { useSelector } from "react-redux";
 import { Link, useParams, Navigate } from "react-router-dom";
 import ROUTES from "../../app/routes";
 // import selectors
+import { selectQuizzes } from "../quizzes/quizzesSlice";
 
 export default function Topic() {
   const topics = {};  // replace with selector
