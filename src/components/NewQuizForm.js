@@ -13,7 +13,7 @@ export default function NewQuizForm() {
   const [cards, setCards] = useState([]);
   const [topicId, setTopicId] = useState("");
   const navigate = useNavigate();
-  const topics = {};  // Replace with topics 
+  const topics = {};  useSelector(selectTopics);
   const dispatch = useDispatch();
 
   const handleSubmit = (e) => {
