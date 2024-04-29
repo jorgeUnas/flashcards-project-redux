@@ -22,7 +22,6 @@ export const topicsSlice = createSlice({
       state.topics[topicId].quizIds.push(id);
     }
   }
-  
 });
 
 export const { addTopic, addQuizIdForTopic } = topicsSlice.actions;

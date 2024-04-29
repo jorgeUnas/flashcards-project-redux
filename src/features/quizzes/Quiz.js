@@ -1,10 +1,9 @@
 import React from "react";
 import { useSelector } from "react-redux";
+import { selectQuizzes } from "./quizzesSlice";
 import { Link, useParams, Navigate } from "react-router-dom";
 import Card from "../cards/Card";
 import ROUTES from "../../app/routes";
-// import quiz selector
-import { selectQuizzes } from "./quizzesSlice";
 
 export default function Quiz() {
   const quizzes = useSelector(selectQuizzes);
@@ -14,7 +13,6 @@ export default function Quiz() {
   if(!quiz) {
     return <Navigate to={ROUTES.quizzesRoute()} replace/>
   }
-
 
   return (
     <section>
